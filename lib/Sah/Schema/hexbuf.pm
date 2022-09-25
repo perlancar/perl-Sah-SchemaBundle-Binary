@@ -8,12 +8,14 @@ use strict;
 # VERSION
 
 our $schema = [str => {
-    summary => 'Binary data encoded in hexdigits',
+    summary => 'Binary data encoded in hexdigits, e.g. "fafafa" or "ca fe 00"',
     match => qr/\A([0-9A-fa-f][0-9A-fa-f])*\z/,
 
     prefilters => ['Str::remove_whitespace'],
 
     description => <<'_',
+
+Whitespaces are allowed and will be removed.
 
 Note that this schema does not decode the hex encoding for you.
 
