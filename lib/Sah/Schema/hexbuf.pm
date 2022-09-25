@@ -29,7 +29,7 @@ _
         {value=>'fa fa  fa', valid=>1, summary=>'Whitespaces allowed, will be removed', validated_value=>'fafafa'},
         {value=>'fafafg', valid=>0},
     ],
-}, {}];
+}];
 
 1;
 
