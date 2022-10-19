@@ -17,7 +17,9 @@ our $schema = [str => {
 
 Whitespaces are allowed and will be removed.
 
-Note that this schema does not decode the hex encoding for you.
+Note: that this schema does not decode the hex encoding for you.
+
+Note: if you add clauses like `leng`, `min_len`, `max_len`
 
 _
 
@@ -28,6 +30,9 @@ _
         {value=>'FAFAFA', valid=>1, summary=>'Uppercase digits are allowed, not coerced to lowercase'},
         {value=>'fa fa  fa', valid=>1, summary=>'Whitespaces allowed, will be removed', validated_value=>'fafafa'},
         {value=>'fafafg', valid=>0},
+    ],
+    links => [
+        {url=>'pm:Types::XSD', summary=>"Equivalent Type::Tiny constraints: HexBinary (doesn't allow whitespace; length, minLength, maxLength params checks the /decoded/ length)"},
     ],
 }];
 
