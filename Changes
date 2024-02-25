@@ -1,3 +1,10 @@
+0.009   2024-02-25  Released-By: PERLANCAR; Urgency: medium
+
+        - Rename module/dist Sah-Schema{s,Bundle}-Binary following rename
+          of Sah-Schema{s,Bundle} (for visual clarity and consistency with
+          naming of other bundles).
+
+
 0.008   2022-10-20  Released-By: PERLANCAR; Urgency: low
 
         - No functional changes.
