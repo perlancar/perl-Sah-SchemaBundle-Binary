@@ -1,4 +1,4 @@
-package Sah::Schemas::Binary;
+package Sah::SchemaBundle::Binary;
 
 use strict;
 
